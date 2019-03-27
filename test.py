@@ -13,7 +13,7 @@ def hello():
 #        filename = secure_filename(f.filename)
 #        f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 #        #return redirect(url_for('uploaded_file',filename=filename))
-       return "hiiiii"
+         return "hiiiii"
  
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=8080, debug=True)
