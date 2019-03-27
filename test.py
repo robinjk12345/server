@@ -1,7 +1,6 @@
-import os
 from flask import Flask, flash, request, redirect, url_for
 from werkzeug.utils import secure_filename
-UPLOAD_FOLDER = r'C:\Users\robin\Desktop\testing server\uploads'
+UPLOAD_FOLDER = '/tmp'
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -10,10 +9,10 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def hello():
 
      if request.method == 'POST':
-       f = request.files['file']
-       filename = secure_filename(f.filename)
-       f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-       #return redirect(url_for('uploaded_file',filename=filename))
+#        f = request.files['file']
+#        filename = secure_filename(f.filename)
+#        f.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
+#        #return redirect(url_for('uploaded_file',filename=filename))
        return "hiiiii"
  
 if __name__ == '__main__':
