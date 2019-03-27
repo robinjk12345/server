@@ -1,2 +1,1 @@
-worker: python test.py
-web: input.html
+web: gunicorn app:app
