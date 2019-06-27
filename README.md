@@ -1,2 +1,2 @@
 # server
-tetsing how servers work
+testing how servers work
